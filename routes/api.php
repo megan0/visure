@@ -22,5 +22,13 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::get('list',  [VisureController::class,'index']);
 
 Route::post('select/visure',  [VisureController::class,'select_visure']);
+Route::post('buy/visure',  [VisureController::class,'buy']);
+
+Route::post('details/visure',  [VisureController::class,'details']);
+
+Route::post('document/visure',  [VisureController::class,'document']);
+
+
+
 
 
